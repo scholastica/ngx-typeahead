@@ -12,14 +12,17 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/orizens/ngx-typeahead.git"
+    "url": "https://github.com/scholastica/ngx-typeahead.git"
   },
   "bugs": {
-    "url": "https://github.com/orizens/ngx-typeahead/issues"
+    "url": "https://github.com/scholastica/ngx-typeahead/issues"
   },
-  "homepage": "https://github.com/orizens/ngx-typeahead",
+  "homepage": "https://github.com/scholastica/ngx-typeahead",
   "private": false,
   "dependencies": {
     "@angular/animations": "~9.1.9",
