@@ -1,23 +1,24 @@
 {
-  "name": "ngx-typeahead-lib",
+  "name": "@scholastica/ngx-typeahead-lib",
   "version": "9.2.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "build:lib": "ng build ngx-typeahead",
-    "publish:lib": "npm run build:lib && npm publish --tag latest ./dist/ngx-typeahead",
-    "publish:lib:next": "npm publish --tag next ./dist/ngx-typeahead",
+    "publish:lib": "npm run build:lib && npm publish --tag latest ./dist/ngx-typeahead --registry=https://npm.pkg.github.com",
+    "publish:lib:next": "npm publish --tag next ./dist/ngx-typeahead --registry=https://npm.pkg.github.com",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
+    "registry":"https://npm.pkg.github.com",
+    "access": "public"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/scholastica/ngx-typeahead.git"
+    "url": "git+https://github.com/scholastica/ngx-typeahead.git"
   },
   "bugs": {
     "url": "https://github.com/scholastica/ngx-typeahead/issues"
